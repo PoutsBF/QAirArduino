@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Qualité environnement</title>
+
+	<meta name="description" content="Suivi des indicateurs de qualité de l'environnement">
+	<meta name="author" content="Stéphane Lepoutère">
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/tether.min.js"></script>
+
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="js/scripts.js"></script>
+
+</head>
+
+<body>
+	<div class="container-fluid">
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse"
+				data-target="#bs-example-navbar-collapse-1">
+				<span class="navbar-toggler-icon"></span>
+			</button> <a class="navbar-brand" href="#">Pout's Environnement</a>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+							data-toggle="dropdown">Dropdown link</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another
+								action</a> <a class="dropdown-item" href="#">Something else here</a>
+							<div class="dropdown-divider">
+							</div> <a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="text-center">
+					Infos environnementales
+				</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-2">température</div>
+			<div class="col-md-2">Hygrométrie</div>
+			<div class="col-md-2">Hygro absolue</div>
+			<div class="col-md-2">Pression</div>
+			<div class="col-md-2">eCO2</div>
+			<div class="col-md-2">TCOV</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-4">
+				<h3>
+					Infos
+				</h3>
+				<button id="btInfoConnection" type="button" class="btn btn-block btn-lg btn-danger" title="état...">
+					déconnecté
+				</button>
+				<p>
+					adresse IP : <span id="IPserveurWS"></span>
+				</p>
+				<p id="affModeSelect" class="text-center">
+					mode sélectionné
+				</p>
+			</div>
+			<div class="col-md-4">
+				<p class="text-center">
+					Stéphane Lepoutère<br />(c) 2020
+				</p>
+			</div>
+			<div class="col-md-4">
+			</div>
+		</div>
+	</div>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
